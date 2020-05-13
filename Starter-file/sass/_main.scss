@@ -55,7 +55,10 @@ $colorfooter:#1078AD;
          font-weight: 700;
          border: none;
          border-radius: 4px;
-         //cursor: pointer;    
+         //cursor: pointer;  
+         a{
+            text-decoration: none;
+        }  
     }
 
 }
