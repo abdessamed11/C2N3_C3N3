@@ -1,6 +1,6 @@
 const questionsList = [
 	{
-		text: 'Pensez-vous avoir eu de la fièvre ces derniers jours (frissons, sueurs) ?',
+		text: 'Question 1 : Pensez-vous avoir eu de la fièvre ces derniers jours (frissons, sueurs) ?',
 		choices: `<div class="box"><label for="oui">Oui</label>
         <input type="radio" value="oui" id="oui" name="choice"></div><br>
         <div class="box"><label for="non">Non</label>
@@ -8,13 +8,13 @@ const questionsList = [
 		number: 1
 	},
 	{
-		text: 'quelle est votre température ?',
+		text: 'Question 2 : quelle est votre température ?',
 		choices: `<label for="numerique">degrée</label>
-        <input type="number" id="numerique">`,
+        <input type="number" id="numerique" value="36">`,
 		number: 2
 	},
 	{
-		text: 'Avez-vous une toux ou une augmentation de votre toux habituelle ces derniers jours ?',
+		text: 'Question 3 : Avez-vous une toux ou une augmentation de votre toux habituelle ces derniers jours ?',
 		choices: `<div class="box"><label for="oui">Oui</label>
         <input type="radio" value="oui" id="oui" name="choice"></div><br>
         <div class="box"><label for="non">Non</label>
@@ -22,7 +22,7 @@ const questionsList = [
 		number: 3
 	},
 	{
-		text: 'Avez-vous des douleurs musculaires ou des courbatures inhabituelles ces derniers jours ? ',
+		text: 'Question 4 : Avez-vous des douleurs musculaires ou des courbatures inhabituelles ces derniers jours ? ',
 		choices: `<div class="box"><label for="oui">Oui</label>
         <input type="radio" value="oui" id="oui" name="choice"></div><br>
         <div class="box"><label for="non">Non</label>
@@ -30,7 +30,7 @@ const questionsList = [
 		number: 4
 	},
 	{
-		text: 'Avez-vous un mal de gorge apparu ces derniers jours ? ',
+		text: 'Question 5 : Avez-vous un mal de gorge apparu ces derniers jours ? ',
 		choices: `<div class="box"><label for="oui">Oui</label>
         <input type="radio" value="oui" id="oui" name="choice"></div><br>
         <div class="box"><label for="non">Non</label>
@@ -38,7 +38,7 @@ const questionsList = [
 		number: 5
 	},
 	{
-		text: 'Avez-vous de la diarrhée ces dernières 24 heures (au moins 3 selles molles) ?',
+		text: 'Question 6 : Avez-vous de la diarrhée ces dernières 24 heures (au moins 3 selles molles) ?',
 		choices: `<div class="box"><label for="oui">Oui</label>
         <input type="radio" value="oui" id="oui" name="choice"></div><br>
         <div class="box"><label for="non">Non</label>
@@ -46,7 +46,7 @@ const questionsList = [
 		number: 6
 	},
 	{
-		text: 'Avez-vous une exhausted inhabituelle ces derniers jours ?',
+		text: 'Question 7 : Avez-vous une exhausted inhabituelle ces derniers jours ?',
 		choices: `<div class="box"><label for="oui">Oui</label>
         <input type="radio" value="oui" id="oui" name="choice"></div><br>
         <div class="box"><label for="non">Non</label>
@@ -54,7 +54,7 @@ const questionsList = [
 		number: 7
 	},
 	{
-		text: 'Cette exhausted vous oblige-t-elle à vous reposer plus de la moitié de la journée ?',
+		text: 'Question 7 : Cette exhausted vous oblige-t-elle à vous reposer plus de la moitié de la journée ?',
 		choices: `<div class="box"><label for="oui">Oui</label>
         <input type="radio" value="oui" id="oui" name="choice"></div><br>
         <div class="box"><label for="non">Non</label>
@@ -62,7 +62,7 @@ const questionsList = [
 		number: 8
 	},
 	{
-		text: 'Avez-vous des difficultés importantes pour vous alimenter ou boire depuis plus de 24h ? ',
+		text: 'Question 8 : Avez-vous des difficultés importantes pour vous alimenter ou boire depuis plus de 24h ? ',
 		choices: `<div class="box"><label for="oui">Oui</label>
         <input type="radio" value="oui" id="oui" name="choice"></div><br>
         <div class="box"><label for="non">Non</label>
@@ -71,7 +71,7 @@ const questionsList = [
 	},
 	{
 		text:
-			'Avez-vous vu apparaître une gêne respiratoire ou une augmentation de votre gêne respiratoire habituelle ? ',
+			'Question 9 : Avez-vous vu apparaître une gêne respiratoire ou une augmentation de votre gêne respiratoire habituelle ? ',
 		choices: `<div class="box"><label for="oui">Oui</label>
         <input type="radio" value="oui" id="oui" name="choice"></div><br>
         <div class="box"><label for="non">Non</label>
@@ -79,7 +79,7 @@ const questionsList = [
 		number: 10
 	},
 	{
-		text: 'Comment vous sentez-vous ? ',
+		text: 'Question 10 : Comment vous sentez-vous ? ',
 		choices: `<div class="flex-radio">
 		<div class="mini">
 		<div class="box"><label for="exhausted">Fatigué</label>
@@ -103,28 +103,28 @@ const questionsList = [
 		number: 11
 	},
 	{
-		text: `Quel est votre âge ?
+		text: `Question 11 : Quel est votre âge ?
         Ceci, afin de calculer un facteur de risque spécifique.`,
 		choices: `<label for="numerique">ans</label>
-        <input type="number" id="numerique" name="choice">`,
+        <input type="number" id="numerique" name="choice" value="30">`,
 		number: 12
 	},
 	{
-		text: `Quel est votre taille ?
+		text: `Question 12 : Quel est votre taille ?
         Afin de calculer l’indice de masse corporelle qui est un facteur influençant le risque de complications de l’infection.`,
 		choices: `<label for="numerique">cm</label>
-        <input type="number" id="numerique" name="choice">`,
+        <input type="number" id="numerique" name="choice" value="170">`,
 		number: 13
 	},
 	{
-		text: `Quel est votre poids ?
+		text: `Question 13 : Quel est votre poids ?
         Afin de calculer l’indice de masse corporelle qui est un facteur influençant le risque de complications de l’infection.`,
 		choices: `<label for="numerique">kg</label>
-        <input type="number" id="numerique" name="choice">`,
+        <input type="number" id="numerique" name="choice" value="65">`,
 		number: 14
 	},
 	{
-		text: `Avez-vous de l’hypertension artérielle ? Ou avez-vous une maladie cardiaque ou vasculaire ? Ou prenez-vous un traitement à visée cardiologique ?`,
+		text: `Question 14 : Avez-vous de l’hypertension artérielle ? Ou avez-vous une maladie cardiaque ou vasculaire ? Ou prenez-vous un traitement à visée cardiologique ?`,
 		choices: `<div class="box"><label for="oui">Oui</label>
         <input type="radio" value="oui" id="oui" name="choice"></div><br>
         <div class="box"><label for="non">Non</label>
@@ -134,7 +134,7 @@ const questionsList = [
 		number: 15
 	},
 	{
-		text: `Êtes-vous diabétique ?`,
+		text: `Question 15 : Êtes-vous diabétique ?`,
 		choices: `<div class="box"><label for="oui">Oui</label>
         <input type="radio" value="oui" id="oui" name="choice"></div><br>
         <div class="box"><label for="non">Non</label>
@@ -142,7 +142,7 @@ const questionsList = [
 		number: 16
 	},
 	{
-		text: `Avez-vous ou avez-vous eu un cancer ?`,
+		text: `Question 16 : Avez-vous ou avez-vous eu un cancer ?`,
 		choices: `<div class="box"><label for="oui">Oui</label>
         <input type="radio" value="oui" id="oui" name="choice"></div><br>
         <div class="box"><label for="non">Non</label>
@@ -150,7 +150,7 @@ const questionsList = [
 		number: 17
 	},
 	{
-		text: `Avez-vous une maladie respiratoire ? Ou êtes-vous suivi par un pneumologue ? ?
+		text: `Question 17 : Avez-vous une maladie respiratoire ? Ou êtes-vous suivi par un pneumologue ? ?
         Ou êtes-vous suivi par un pneumologue ?`,
 		choices: `<div class="box"><label for="oui">Oui</label>
         <input type="radio" value="oui" id="oui" name="choice"></div><br>
@@ -159,7 +159,7 @@ const questionsList = [
 		number: 18
 	},
 	{
-		text: `Avez-vous une insuffisance rénale chronique dialysée ?`,
+		text: `Question 18 : Avez-vous une insuffisance rénale chronique dialysée ?`,
 		choices: `<div class="box"><label for="oui">Oui</label>
         <input type="radio" value="oui" id="oui" name="choice"></div><br>
         <div class="box"><label for="non">Non</label>
@@ -167,7 +167,7 @@ const questionsList = [
 		number: 19
 	},
 	{
-		text: `Avez-vous une maladie chronique du foie ?`,
+		text: `Question 19 : Avez-vous une maladie chronique du foie ?`,
 		choices: `<div class="box"><label for="oui">Oui</label>
         <input type="radio" value="oui" id="oui" name="choice"></div><br>
         <div class="box"><label for="non">Non</label>
@@ -175,7 +175,7 @@ const questionsList = [
 		number: 20
 	},
 	{
-		text: `Êtes-vous enceinte ?`,
+		text: `Question 20 : Êtes-vous enceinte ?`,
 		choices: `<div class="box"><label for="oui">Oui</label>
         <input type="radio" value="oui" id="oui" name="choice"></div><br>
         <div class="box"><label for="non">Non</label>
@@ -185,7 +185,7 @@ const questionsList = [
 		number: 21
 	},
 	{
-		text: `Avez-vous une maladie connue pour diminuer vos défenses immunitaires ?`,
+		text: `Question 21 : Avez-vous une maladie connue pour diminuer vos défenses immunitaires ?`,
 		choices: `<div class="box"><label for="oui">Oui</label>
         <input type="radio" value="oui" id="oui" name="choice"></div><br>
         <div class="box"><label for="non">Non</label>
@@ -195,7 +195,7 @@ const questionsList = [
 		number: 22
 	},
 	{
-		text: `Prenez-vous un traitement immunosuppresseur ?
+		text: `Question 22 : Prenez-vous un traitement immunosuppresseur ?
         C’est un traitement qui diminue vos défenses contre les infections.
         Voici quelques exemples : corticoïdes, méthotrexate, ciclosporine, tacrolimus, azathioprine, cyclophosphamide (liste non exhaustive).`,
 		choices: `<div class="box"><label for="oui">Oui</label>

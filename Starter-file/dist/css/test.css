@@ -290,12 +290,14 @@ ul li {
   display: none; }
   .questions h3 {
     color: #7f7f7f;
-    margin-bottom: 3em; }
+    margin-bottom: 3em;
+    text-align: center; }
   .questions__form {
     text-align: left; }
     .questions__form #numerique {
+      padding: 10px;
       border: 2px solid #1078AD;
-      width: 15rem;
+      width: 2rem;
       border-radius: 6px; }
     .questions__form #numerique:active {
       border: 2px solid #E5E500; }
@@ -303,7 +305,7 @@ ul li {
       border: 2px solid #1078AD;
       border-radius: 5px;
       background-color: #6faecd;
-      width: 165px;
+      width: 80px;
       text-align: center;
       padding: .5rem;
       margin: 0 1rem; }
@@ -312,6 +314,8 @@ ul li {
         background-color: white;
         display: none; }
     .questions__form .box:active {
+      background-color: #E5E500; }
+    .questions__form .box:hover {
       background-color: #E5E500; }
     .questions__form input {
       margin: 0.8em 0;
@@ -363,8 +367,6 @@ ul li {
   display: flex;
   justify-content: space-evenly; }
   .flex-radio .mini {
-    display: flex;
-    width: 400px;
     justify-content: flex-end;
     align-items: center; }
     .flex-radio .mini input {
