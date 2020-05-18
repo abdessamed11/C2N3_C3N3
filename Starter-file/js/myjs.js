@@ -520,3 +520,5 @@ function getResult(list, counter) {
 		}
 	}
 }
+
+
